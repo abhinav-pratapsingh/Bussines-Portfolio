@@ -7,8 +7,8 @@
           <p>MERN | Data Analytics | SEO | Debugging</p>
         </div>
         <div className="footer-contact">
-          <p><strong>Phone:</strong> +1 (555) 250-9070</p>
-          <p><strong>Email:</strong> hello@businesspulse.dev</p>
+          <p><strong>Phone:</strong> +91 9528745292</p>
+          <p><strong>Email:</strong> teampundir001@gmail.com</p>
         </div>
         <div className="footer-social">
           <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram">

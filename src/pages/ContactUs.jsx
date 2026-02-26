@@ -22,13 +22,13 @@ export default function ContactUs() {
         <div className="contact-card">
           <h3>Direct Contact</h3>
 
-          <p><strong>Email:</strong> hello@businesspulse.dev</p>
+          <p><strong>Email:</strong> teampundir001@gmail.com</p>
           <p><strong>Primary Location:</strong> India</p>
-          <p><strong>Serving Clients:</strong> India & Australia</p>
+          <p><strong>Currently Serving Clients:</strong> India & Australia</p>
 
-          <h3 className="section-heading">Working Hours</h3>
+          {/* <h3 className="section-heading">Working Hours</h3>
           <p>Monday – Friday: 9:00 AM – 7:00 PM (IST)</p>
-          <p>Saturday: 10:00 AM – 4:00 PM (IST)</p>
+          <p>Saturday: 10:00 AM – 4:00 PM (IST)</p> */}
 
           <h3 className="section-heading">What You Can Expect</h3>
           <ul className="check-list">
