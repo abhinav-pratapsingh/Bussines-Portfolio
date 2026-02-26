@@ -1,29 +1,33 @@
 import { motion } from "framer-motion";
+import aniket from "../assets/aniket.png";
+import abhinav from "../assets/abhinav.jpeg";
+import arjun from "../assets/arjun.jpeg";
+import devam from "../assets/devam.png";
 
 const team = [
   {
     name: "Aniket Kumar",
     course: "B-Tech CSE",
     specialization: "MERN Architect",
-    photo: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80",
+    photo: aniket,
   },
   {
     name: "Abhinav Pratap",
     course: "B-Tech CSE",
     specialization: "Debugging Specialist",
-    photo: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=600&q=80",
+    photo: abhinav,
   },
   {
     name: "Arjun Saini",
     course: "B-Tech CSE",
     specialization: "SEO, Content Planning & Website Deployment ",
-    photo: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=600&q=80",
+    photo: arjun,
   },
   {
     name: "Devam Saini",
     course: "B-Tech CSE",
     specialization: "Data Analyst",
-    photo: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=600&q=80",
+    photo: devam,
   },
   {
     name: "Anushree Malik",
