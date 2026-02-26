@@ -1,50 +1,56 @@
 ﻿const values = [
   {
-    title: "Engineering Quality",
-    text: "Clean architecture, scalable code patterns, and production stability in every release.",
+    title: "Engineering Excellence",
+    text: "Clean architecture, scalable systems, and production-ready code standards in every project we deliver.",
   },
   {
-    title: "Growth Mindset",
-    text: "Every design and feature is aligned to user acquisition, retention, and revenue goals.",
+    title: "Growth-Oriented Thinking",
+    text: "Every feature, design decision, and optimization is aligned with acquisition, retention, and revenue growth.",
   },
   {
-    title: "Transparent Delivery",
-    text: "Weekly progress, milestone demos, and clear performance metrics from start to finish.",
+    title: "Transparent Collaboration",
+    text: "Clear communication, milestone-based delivery, and measurable performance tracking from start to finish.",
   },
 ];
 
 const commitments = [
   "Weekly progress meetings with transparent updates",
-  "SEO-ready code and structured content architecture",
-  "Scalable backend decisions for future growth",
-  "Analytics instrumentation for conversion tracking",
+  "SEO-ready development and structured content architecture",
+  "Scalable backend and cloud-ready deployment decisions",
+  "Analytics instrumentation for conversion and revenue tracking",
+  "Long-term technical partnership mindset",
 ];
 
 export default function About() {
   return (
     <section className="page">
-      <h2>About</h2>
+      {/* INTRO */}
+      <h2>About Us</h2>
       <p className="page-intro">
-        We are a growth-focused digital team delivering full-stack MERN
-        products, SEO-led architecture, and data-driven improvements for
-        business outcomes.
+        We are a focused digital team helping businesses in Australia and India
+        build, optimize, and scale modern web platforms powered by clean
+        engineering, SEO strategy, and data-driven decision-making.
       </p>
+
       <div className="about-split">
         <article className="feature-card">
           <h3>Our Mission</h3>
           <p>
-            Help businesses launch and scale digital products that look modern,
-            perform fast, and convert consistently.
+            To help businesses launch and scale digital products that are fast,
+            reliable, and designed to convert consistently.
           </p>
         </article>
+
         <article className="feature-card">
           <h3>Our Vision</h3>
           <p>
-            Be a trusted long-term technology partner for companies that value
-            clean engineering and measurable outcomes.
+            To become a trusted long-term technology partner for companies that
+            value performance, clarity, and measurable business outcomes.
           </p>
         </article>
       </div>
+
+      <h3 className="section-heading">Our Core Values</h3>
       <div className="feature-grid">
         {values.map((value) => (
           <article key={value.title} className="feature-card">
@@ -53,8 +59,9 @@ export default function About() {
           </article>
         ))}
       </div>
+
       <article className="connect-card">
-        <h3>What You Can Expect</h3>
+        <h3>What You Can Expect When Working With Us</h3>
         <ul className="check-list">
           {commitments.map((item) => (
             <li key={item}>{item}</li>

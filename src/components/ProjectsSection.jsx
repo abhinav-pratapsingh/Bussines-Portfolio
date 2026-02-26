@@ -14,7 +14,7 @@ const projects = [
   {
     title: "Analytics Command Center",
     description: "Unified product and marketing metrics into interactive dashboards for rapid decisions.",
-    image: "https://images.unsplash.com/photo-1551281044-8b7f35f2f3f5?auto=format&fit=crop&w=900&q=80",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLruhbsd0R9tJ_eBfUU_ovt4X0VpGwWP9wwg&s",
   },
 ];
 

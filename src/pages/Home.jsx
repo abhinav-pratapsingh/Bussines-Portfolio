@@ -4,65 +4,73 @@ import ProjectsSection from "../components/ProjectsSection";
 import TeamSection from "../components/TeamSection";
 
 const stats = [
-  { value: "120+", label: "Projects Delivered" },
-  { value: "98%", label: "Client Satisfaction" },
-  { value: "2.8x", label: "Avg. Traffic Growth" },
-  { value: "24/7", label: "Debug Support" },
+  { value: "15+", label: "Projects Delivered" },
+  { value: "2", label: "Active Client Partnerships" },
+  { value: "Australia & India", label: "Client Locations" },
+  { value: "Ongoing", label: "Technical Support" },
 ];
 
-const highlights = [
+const services = [
   {
-    title: "Business-First Product Build",
-    text: "We build MERN products around conversion funnels, not just code delivery.",
+    title: "Custom Website Development",
+    text: "High-performance, scalable websites built with modern technologies and optimized for growth.",
   },
   {
-    title: "SEO + Performance Together",
-    text: "Technical SEO, Core Web Vitals, and content structure are integrated from day one.",
+    title: "SEO & Ranking Strategy",
+    text: "Technical SEO, keyword optimization, and structured architecture to improve search visibility.",
   },
   {
-    title: "Data-Led Decisions",
-    text: "Analytics dashboards show what is working so growth and retention become predictable.",
+    title: "Data Analytics & Dashboards",
+    text: "Custom dashboards and reporting systems that transform raw data into actionable insights.",
+  },
+  {
+    title: "Performance Optimization",
+    text: "Core Web Vitals improvement, speed enhancement, and conversion-focused UX refinement.",
+  },
+  {
+    title: "Maintenance & Debug Support",
+    text: "Continuous monitoring, issue resolution, and long-term technical assistance.",
+  },
+  {
+    title: "E-Commerce Solutions",
+    text: "Secure and conversion-driven online stores designed to maximize revenue potential.",
   },
 ];
 
-const process = ["Discover", "Design & Develop", "Launch", "Optimize"];
+const process = [
+  "Discovery & Strategy",
+  "Design & Development",
+  "Launch & Deployment",
+  "Optimize & Scale",
+];
 
 const testimonials = [
   {
     quote:
-      "Our website now loads in under 2 seconds and inbound leads doubled within 3 months.",
-    name: "Ritika S.",
-    role: "Founder, Retail Brand",
+      "Our website performance improved significantly and lead inquiries increased after launch.",
+    name: "Australian Client",
+    role: "Business Owner, Australia",
   },
   {
     quote:
-      "The team transformed scattered data into one dashboard that guides every weekly decision.",
-    name: "Jason M.",
-    role: "Operations Lead, SaaS Startup",
+      "The analytics dashboard helped us track performance and make better weekly decisions.",
+    name: "Indian Client",
+    role: "Operations Lead, India",
   },
-];
-
-const industries = [
-  "Ecommerce",
-  "Education",
-  "Healthcare",
-  "Real Estate",
-  "SaaS",
-  "Local Business",
 ];
 
 const faqs = [
   {
-    q: "How long does a business website project take?",
-    a: "Most websites are delivered in 3 to 6 weeks based on features, integrations, and content readiness.",
+    q: "How long does a website project take?",
+    a: "Most projects are delivered within 3 to 6 weeks depending on complexity and integrations.",
   },
   {
     q: "Do you provide SEO after launch?",
-    a: "Yes. We offer technical SEO, keyword planning, and monthly optimization reports post launch.",
+    a: "Yes. We offer ongoing SEO support, reporting, and optimization strategies.",
   },
   {
-    q: "Can you improve an existing MERN project?",
-    a: "Yes. We audit code quality, fix bottlenecks, improve UX, and stabilize production issues.",
+    q: "Can you improve our existing website?",
+    a: "Absolutely. We audit your current system, fix technical issues, and enhance performance.",
   },
 ];
 
@@ -71,21 +79,26 @@ export default function Home() {
     <div>
       <section className="hero">
         <div className="mesh" />
+
         <motion.h1
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
         >
-          Build Better Digital Business With MERN + Data Intelligence
+          Helping Businesses in Australia & India Grow with
+          High-Performance Web, SEO & Data Solutions
         </motion.h1>
+
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.25, duration: 0.7 }}
         >
-          We design, develop, optimize, and scale websites with modern UX, SEO
-          strategy, analytics insights, and precision debugging.
+          We are a focused digital team delivering modern websites,
+          measurable SEO strategies, and intelligent analytics systems
+          designed for real business growth.
         </motion.p>
+
         <motion.div
           className="hero-cta"
           initial={{ opacity: 0, y: 12 }}
@@ -93,12 +106,13 @@ export default function Home() {
           transition={{ delay: 0.4, duration: 0.5 }}
         >
           <Link to="/services" className="btn btn-primary">
-            Explore Services
+            View Our Services
           </Link>
           <Link to="/contact-us" className="btn btn-secondary">
-            Start Your Project
+            Book Free Consultation
           </Link>
         </motion.div>
+
         <div className="stat-grid">
           {stats.map((item) => (
             <article key={item.label} className="stat-card">
@@ -110,12 +124,12 @@ export default function Home() {
       </section>
 
       <section className="section">
-        <h2>Why Businesses Choose Us</h2>
-        <div className="feature-grid">
-          {highlights.map((item, index) => (
+        <h2>Our Core Services</h2>
+        <div className="service-grid">
+          {services.map((item, index) => (
             <motion.article
               key={item.title}
-              className="feature-card"
+              className="service-card"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
@@ -140,32 +154,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section">
-        <h2>Industries We Support</h2>
-        <div className="industry-grid">
-          {industries.map((item) => (
-            <article key={item} className="industry-chip">
-              {item}
-            </article>
-          ))}
-        </div>
-      </section>
-
       <ProjectsSection />
-      <TeamSection />
 
-      <section className="section">
-        <h2>Client Voices</h2>
-        <div className="testimonial-grid">
-          {testimonials.map((item) => (
-            <article key={item.name} className="testimonial-card">
-              <p>"{item.quote}"</p>
-              <h3>{item.name}</h3>
-              <small>{item.role}</small>
-            </article>
-          ))}
-        </div>
-      </section>
+      <TeamSection />
 
       <section className="section">
         <h2>Frequently Asked Questions</h2>
@@ -187,27 +178,14 @@ export default function Home() {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.45 }}
         >
-          <h2>Connect Us</h2>
+          <h2>Ready to Improve Your Online Presence?</h2>
           <p>
-            Ready to grow your business with MERN development, data analytics,
-            SEO, and debugging support.
+            Let’s discuss how our team can help you build a faster,
+            smarter, and growth-focused digital system.
           </p>
-          <div className="connect-grid">
-            <p>
-              <strong>Phone:</strong> +1 (555) 250-9070
-            </p>
-            <p>
-              <strong>Email:</strong> hello@businesspulse.dev
-            </p>
-            <p>
-              <strong>Instagram:</strong> @businesspulse.dev
-            </p>
-            <p>
-              <strong>Facebook:</strong> BusinessPulse
-            </p>
-          </div>
+
           <Link to="/contact-us" className="btn btn-primary">
-            Go to Contact Us
+            Schedule a Strategy Call
           </Link>
         </motion.article>
       </section>
