@@ -593,3 +593,86 @@ main {
     grid-template-columns: 1fr;
   }
 }
+
+.form-error {
+  color: #d93025;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+/* Improve form focus */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--brand);
+  box-shadow: 0 0 0 2px rgba(11, 110, 95, 0.15);
+}
+
+/* Button loading */
+.btn.loading {
+  opacity: 0.85;
+  cursor: not-allowed;
+}
+
+/* Spinner */
+.spinner {
+  width: 18px;
+  height: 18px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-top: 3px solid #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  animation: spin 0.7s linear infinite;
+}
+
+/* Popup overlay */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(16, 27, 31, 0.55);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Popup box */
+.popup {
+  background: var(--card);
+  border-radius: 16px;
+  padding: 28px;
+  width: 90%;
+  max-width: 420px;
+  text-align: center;
+  border: 1px solid var(--border);
+  box-shadow: 0 18px 40px rgba(16, 27, 31, 0.15);
+  animation: scaleUp 0.3s ease;
+}
+
+.popup h3 {
+  color: var(--brand);
+}
+
+.popup p {
+  margin: 12px 0 18px;
+}
+
+/* Animations */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
